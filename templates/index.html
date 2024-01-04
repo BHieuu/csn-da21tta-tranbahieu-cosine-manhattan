@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Máy tính Cosine và Manhattan</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <h1>Công cụ tính toán Manhattan và Cosine</h1>
+
+    <form action="/ketqua" method="post" onsubmit="return ThongBao()">
+      <label for="txt1">Văn bản 1:</label>
+      <textarea
+        name="txt1"
+        id="txt1"
+        rows="4"
+        cols="50"
+        oninput="demSoChu('txt1', 'demChuTxt1')"
+      ></textarea>
+      <div id="demChuTxt1" style="color: grey">Số chữ: 0</div>
+      <br />
+      <label for="txt2">Văn bản 2:</label>
+      <textarea
+        name="txt2"
+        id="txt2"
+        rows="4"
+        cols="50"
+        oninput="demSoChu('txt2', 'demChuTxt2')"
+      ></textarea>
+      <div id="demChuTxt2" style="color: grey">Số chữ: 0</div>
+      <br />
+      <button type="submit">Tính toán</button>
+      <button type="button" onclick="XoaNoiDung()">Xóa</button>
+    </form>
+
+    <form id="formDemTu">
+      <label for="tuNhap">Nhập từ cần đếm:</label>
+      <input type="text" id="tuNhap" name="tuNhap" required />
+      <button type="button" onclick="demTuXuatHien()">Đếm từ</button>
+    </form>
+
+    <div id="ketQuaDemTu"></div>
+
+    <script>
+      function ThongBao() {
+        var txt1 = document.getElementById("txt1").value;
+        var txt2 = document.getElementById("txt2").value;
+        if (txt1.trim() === "" || txt2.trim() === "") {
+          alert("Vui lòng nhập nội dung cho cả hai văn bản.");
+          return false;
+        }
+        return true;
+      }
+
+      function XoaNoiDung() {
+        document.getElementById("txt1").value = "";
+        document.getElementById("txt2").value = "";
+      }
+
+      function demTuXuatHien() {
+        var txt1 = document.getElementById("txt1").value;
+        var txt2 = document.getElementById("txt2").value;
+
+        if (txt1.trim() === "" || txt2.trim() === "") {
+          alert("Vui lòng nhập nội dung cần đếm.");
+          return;
+        }
+
+        var tuNhap = document.getElementById("tuNhap").value;
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "/dem_tu", true);
+        xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            document.getElementById("ketQuaDemTu").style.display = "block";
+            document.getElementById("ketQuaDemTu").innerText = JSON.parse(
+              xhr.responseText
+            ).dem_kq;
+          }
+        };
+        xhr.send(JSON.stringify({ tu: tuNhap, txt1: txt1, txt2: txt2 }));
+      }
+      function demSoChu(idTextarea, idDemChu) {
+        var noiDung = document.getElementById(idTextarea).value;
+        var soTu = noiDung
+          .trim()
+          .split(/\s+/)
+          .filter(function (n) {
+            return n != "";
+          }).length;
+        document.getElementById(idDemChu).innerText = "Số từ: " + soTu;
+      }
+    </script>
+  </body>
+</html>

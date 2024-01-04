@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kết quả tính toán</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <h1>Kết quả tính toán</h1>
+    <div class="giaodien">
+      <p>Cosine Similarity: {{ kq_cs }}</p>
+
+      {% if kq_cs > 0.8 %}
+      <p>Hai văn bản có độ giống nhau rất cao.</p>
+      {% elif kq_cs > 0.5 %}
+      <p>Hai văn bản khá giống nhau.</p>
+      {% else %}
+      <p>Hai văn bản không giống nhau.</p>
+      {% endif %}
+
+      <p>Manhattan Distance: {{ kc_mht }}</p>
+
+      {% if kc_mht < 0.5 %}
+      <p>Hai văn bản có độ giống nhau rất cao.</p>
+      {% elif kc_mht < 1.0 %}
+      <p>Hai văn bản khá giống nhau.</p>
+      {% else %}
+      <p>Hai văn bản không giống nhau.</p>
+      {% endif %}
+
+      <p>Từ giống nhau:{{ kq_txt1}}</p>
+      <p>Từ khác nhau văn bản 1:{{ kq_txt2}}</p>
+      <p>Từ khác nhau văn bản 2:{{ kq_txt3}}</p>
+    </div>
+  </body>
+</html>

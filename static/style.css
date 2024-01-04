@@ -1,0 +1,117 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 20px;
+  background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+  align-items: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background-color: #ffffffdd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  color: #2193b0;
+  text-align: center;
+  font-size: 36px;
+  text-shadow: 1px 1px 0 #6dd5ed, 2px 2px 0 #6dd5ed, 3px 3px 0 #6dd5ed,
+    4px 4px 0 #6dd5ed, 5px 5px 0 #6dd5ed, 6px 6px 0 #6dd5ed, 7px 7px 0 #6dd5ed,
+    8px 8px 0 #6dd5ed;
+  transition: transform 0.3s, text-shadow 0.3s;
+}
+
+h1:hover {
+  transform: translateY(-5px);
+  text-shadow: 1px 1px 0 #6dd5ed, 2px 2px 0 #6dd5ed, 3px 3px 0 #6dd5ed,
+    4px 4px 0 #6dd5ed;
+}
+
+p {
+  color: #555;
+  line-height: 1.5;
+}
+
+form,
+.ketQuaDemTu {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #ffffffcc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  background-image: linear-gradient(to right, #6dd5ed, #2193b0);
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+button:hover {
+  background-image: linear-gradient(to right, #2193b0, #6dd5ed);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.22);
+  transform: translateY(-2px);
+}
+
+.giaodien,
+#ketQuaDemTu {
+  background-color: #ffffffcc;
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+#ketQuaDemTu h2,
+#ketQuaDemTu p,
+#ketQuaDemTu ul,
+#ketQuaDemTu li {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#ketQuaDemTu h2 {
+  text-align: center;
+}
+
+#ketQuaDemTu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#ketQuaDemTu li {
+  margin-bottom: 5px;
+}
