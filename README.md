@@ -5,20 +5,16 @@
 Thầy có dặn dò ghi vào phần này giúp em ạ!
  ```
 -
--
-
 # Mô tả đồ án
- ```bash- Tên đề tài: Tìm hiểu và cài đặt thuật toán đánh giá sự tương đồng của văn bản sử dụng độ đo của Cosine và Manhattan.
+Tên đề tài: Tìm hiểu và cài đặt thuật toán đánh giá sự tương đồng của văn bản sử dụng độ đo của Cosine và Manhattan.
 - Giáo viên hướng dẫn: Nguyễn Nhứt Lam.
 - Thời gian thực hiện: 27/10/2023 đến nggày 31/12/2023
 - Sinh viên thực hiện: Trần Bá Hiếu - 110121024
 - Nội dung đề tài: Tìm hiểu và cài đặt thuật toán đánh giá sự tương đồng của văn bản sử dụng độ đo của Cosine và Manhattan.
- ```
+
 - Yêu Cầu :
-```bash
 1.Tìm hiểu về độ đo Cosine và Manhattan.
 2.Cài đặt thuật toán.
-```
 -	Phương pháp thực hiện :
 ```bash
 1.	Nghiêm cứu lý thuyết : đọc và tìm hiểu các nghiên cứu,bài viết khoa học liên quan đến độ đo Cosine và Manhattan trong đánh giá sự tương đồng văn bản.
