@@ -27,7 +27,7 @@ Thầy có dặn dò ghi vào phần này giúp em ạ!
 -	Kết quả đạt được :
 1.	Thuật toán được cài đặt : có mã nguồn hoạt động đầy đủ cho cả hai thuật toán.
 2.	Hiệu suất được đánh giá : Các chỉ số như độ chính xác, độ phước tạp tính toán được đo lường.
-3.	So sánh: Đã Thực hiện so sánh độ hiệu quả và chính xác giữa hai thuật toán,định rõ trong trường hợp nào một thuật toán hoạt động tốt hơn so với thuật toán kia.
+3.	So sánh: Đã Thực hiện so sánh độ hiệu quả và chính xác giữa hai thuật toán, định rõ trong trường hợp nào một thuật toán hoạt động tốt hơn so với thuật toán kia.
 ```
 
 ![Ảnh minh họa dự án](https://www.python.org/static/community_logos/python-logo.png)
@@ -46,7 +46,8 @@ Thầy có dặn dò ghi vào phần này giúp em ạ!
 - Ngày 3-11/11/2023 Tìm hiểu cơ bản Python ( Môi trường lập trình,thư viện ... )
 - Ngày 15/12/2023 tiến hành lập trình.
 - Ngày 24/12/2023 tiến hành viết báo cáo và nghiêm cứu kỹ vào thuật toán.
-
+- Ngày 5/1/2024 Hoàn thành báo cáo.
+- Ngày 8/1/2024 Gửi báo báo.
 1. Cài đặt yêu cầu:
     ```bash
     Cài đặt thư viện Python.
