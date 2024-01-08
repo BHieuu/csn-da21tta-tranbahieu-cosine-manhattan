@@ -1,10 +1,5 @@
 # csn-da21tta-tranbahieu-cosine-manhattan
 
-#Thông báo của giáo viên đến
- ```bash
-Thầy có dặn dò ghi vào phần này giúp em ạ!
- ```
--
 # Mô tả đồ án
 Tên đề tài: Tìm hiểu và cài đặt thuật toán đánh giá sự tương đồng của văn bản sử dụng độ đo của Cosine và Manhattan.
 - Giáo viên hướng dẫn: Nguyễn Nhứt Lam.
@@ -54,7 +49,32 @@ Tên đề tài: Tìm hiểu và cài đặt thuật toán đánh giá sự tư�
     Cài đặt thư viện Flask.
    ```
 ## Sử Dụng
+Thư viện bắt buộc để chạy được bộ mã.
 
+```bash
+Sklearn
+```
+```bash
+Flask
+```
+- Hướng dẫn cài đặt Sklearn và Flask trên VScode-
+1. Mở Terminal trên VScode bằng cách nhấn vào setting -> view -> terminal.
+2. Nhập mã sau đề cài môi trường bảo
+```bash
+ python -m venv myenv
+```
+3. Sau đó nhập mã sau để kích hoạt môi trường ảo
+```bash
+myenv\Scripts\activate
+```
+4. Cài đặt Sklearn
+```bash
+pip install scikit-learn
+```
+6. Cài đặt Flask
+```bash
+pip install Flask
+```
 Sử dụng ngôn ngữ.
 
 ```bash
