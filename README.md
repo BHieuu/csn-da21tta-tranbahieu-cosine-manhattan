@@ -1,5 +1,7 @@
 # csn-da21tta-tranbahieu-cosine-manhattan
-
+# Process-report: Báo cáo tiến độ
+# Thesis: Về file văn bản của đồ án.
+# src: Mã nguồn của đồ án.
 # Mô tả đồ án
 Tên đề tài: Tìm hiểu và cài đặt thuật toán đánh giá sự tương đồng của văn bản sử dụng độ đo của Cosine và Manhattan.
 - Giáo viên hướng dẫn: Nguyễn Nhứt Lam.
